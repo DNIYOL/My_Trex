@@ -55,7 +55,7 @@ function setup() {
   gameOver = createSprite((windowWidth/2),100);
   gameOver.addImage(gameOverImg);
   
-  restart = createSprite(300,140);
+  restart = createSprite((windowWidth/2),140);
   restart.addImage(restartImg);
   
  
@@ -81,7 +81,7 @@ function draw() {
   
   background('cyan');
   //displaying score
-  text("Score: "+ score, 450,50);
+  text("Score: "+ score, windowWidth-150,50);
   
   
   if(gameState === PLAY){
